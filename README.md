@@ -1,6 +1,8 @@
 ubuntu-openbox-vnc
 =========================
 ## Features
+- Update to 22.04
+- Reeplace firefox with dillo (ultralightware browser)
 - VNC server
 - SSH
 
