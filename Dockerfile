@@ -1,16 +1,16 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
-MAINTAINER Chen Wang<mr_cwang@foxmail.com>
+MAINTAINER cypherpunk
 
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
 	&& apt-get install -y supervisor \
-		openssh-server vim-tiny \
+		openssh-server nano \
 		openbox \
 		x11vnc xvfb \
-		firefox \
+		dillo \
 		pwgen \
 	&& apt-get autoclean \
 	&& apt-get autoremove \
